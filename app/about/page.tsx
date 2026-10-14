@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { SITE_NAME, socialMetadata } from "@/lib/seo";
-import { about, getContactEmail, legal } from "@/lib/site";
+import { about, formatNameList, getContactEmail, legal } from "@/lib/site";
 
 const description =
   "A small, highly capable fleet management team with over a decade of combined experience across Southeastern markets — Panamerica Auto Rentals, the trade name of Panamerica Auto, LLC.";
@@ -25,7 +25,7 @@ const facts = [
   ["Status", legal.status],
   ["Entity type", legal.jurisdiction],
   ["Filed", legal.filed],
-  ["Authorized member", legal.authorizedMember],
+  ["Authorized members", formatNameList(legal.authorizedMembers)],
   ["Registered agent", legal.registeredAgent.name],
   ["Registered agent address", legal.registeredAgent.address],
 ] as const;
