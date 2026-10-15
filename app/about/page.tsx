@@ -66,6 +66,25 @@ export default function AboutPage() {
         </ul>
       </div>
 
+      <section className="mt-14">
+        <p className="font-heading text-xs tracking-[0.28em] text-gold uppercase">
+          Meet the founder
+        </p>
+        <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          {about.founder.name}
+        </h2>
+        <div className="mt-6 rounded-xl bg-navy-mid p-6 ring-1 ring-white/10 sm:p-8">
+          {about.founder.bio.map((paragraph, index) => (
+            <p
+              key={paragraph}
+              className={`${index === 0 ? "" : "mt-5 "}text-base leading-relaxed text-white/80 sm:text-lg`}
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </section>
+
       <section className="mt-10 rounded-xl bg-navy-mid p-6 ring-1 ring-white/10 sm:p-8">
         <p className="font-heading text-xs tracking-[0.28em] text-gold uppercase">
           Fleet partners
