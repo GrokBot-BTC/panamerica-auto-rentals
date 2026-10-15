@@ -59,6 +59,21 @@ export const about = {
     "Cape Coral",
     "Punta Gorda",
   ],
+  oneRoof: {
+    heading: "Everything your car needs, under one roof",
+    intro:
+      "Panamerica Auto, LLC is more than a rental operation. Over the years we've built a network of trusted partners and in-house know-how, so every vehicle we touch is handled by someone who does that job well. That includes:",
+    items: [
+      "Dedicated mechanic, tire and fleet services",
+      "Towing and transport",
+      "Professional photography",
+      "Dealership and auction access for buying and selling",
+      "Cleaning and detailing",
+      "Listing management and pricing strategy",
+    ],
+    closing:
+      "Whether you own one car or a growing fleet, we can plug into the parts you need or take care of all of it.",
+  },
   founder: {
     name: "Chris Volkernick",
     bio: [
