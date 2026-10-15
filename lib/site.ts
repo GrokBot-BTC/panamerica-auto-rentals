@@ -57,6 +57,14 @@ export const about = {
     "Cape Coral",
     "Punta Gorda",
   ],
+  founder: {
+    name: "Chris Volkernick",
+    bio: [
+      "I started in vehicle rentals around 2020. I had run Airbnb properties, and through that I found Turo, which I saw as the car version of Airbnb. I listed one of my own cars with a co-host fleet manager, then went to work for that company on their other cars. Over time I bought my own cars to rotate into their fleet and grew with them as they expanded across several locations. I eventually ran one location on my own with roughly 40 to 50 cars, and at the peak I worked with somewhere between 100 and 150 cars. Along the way I managed cars in Orlando, Jacksonville, Tampa, St. Petersburg, the Fort Myers and Cape Coral area, and Punta Gorda.",
+      "I then started working for myself, running my own cars and taking on cars from other owners through Panamerica Auto, LLC. I stay hands-on in all of it: pricing, guest messages, maintenance, cleaning, scheduling, tolls, insurance, and buying vehicles.",
+      "Turo was my first work in the car business, and I learned it by doing it. I also hold a computer science degree and have a software development background in web and mobile apps. I'm also experimenting with AI and automation solutions in the business, and I'm exploring branching out into the autonomous vehicle market as it emerges, including the Cybercab.",
+    ],
+  },
 } as const;
 
 export const services = [
