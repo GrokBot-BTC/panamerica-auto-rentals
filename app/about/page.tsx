@@ -67,6 +67,32 @@ export default function AboutPage() {
       </div>
 
       <section className="mt-14">
+        <h2 className="text-2xl font-bold text-white sm:text-3xl">
+          {about.oneRoof.heading}
+        </h2>
+        <p className="mt-5 text-lg leading-relaxed text-white/75">
+          {about.oneRoof.intro}
+        </p>
+        <ul className="mt-5 space-y-2.5">
+          {about.oneRoof.items.map((item) => (
+            <li
+              key={item}
+              className="flex gap-3 text-base leading-relaxed text-white/80 sm:text-lg"
+            >
+              <span
+                aria-hidden="true"
+                className="mt-2.5 size-1.5 shrink-0 rounded-full bg-gold"
+              />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-5 text-lg leading-relaxed text-white/75">
+          {about.oneRoof.closing}
+        </p>
+      </section>
+
+      <section className="mt-14">
         <p className="font-heading text-xs tracking-[0.28em] text-gold uppercase">
           Meet the founder
         </p>
