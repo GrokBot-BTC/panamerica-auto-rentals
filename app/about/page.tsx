@@ -32,34 +32,33 @@ const facts = [
 
 type Person = {
   readonly name: string;
+  readonly title?: string;
   readonly bio: readonly string[];
 };
 
-function PersonSection({
-  eyebrow,
-  person,
-}: {
-  eyebrow: string;
-  person: Person;
-}) {
+function FoundersSection({ people }: { people: readonly Person[] }) {
   return (
     <section className="mt-14">
       <p className="font-heading text-xs tracking-[0.28em] text-gold uppercase">
-        {eyebrow}
+        Meet the founders
       </p>
-      <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
-        {person.name}
-      </h2>
-      <div className="mt-6 rounded-xl bg-navy-mid p-6 ring-1 ring-white/10 sm:p-8">
-        {person.bio.map((paragraph, index) => (
-          <p
-            key={paragraph}
-            className={`${index === 0 ? "" : "mt-5 "}text-base leading-relaxed text-white/80 sm:text-lg`}
-          >
-            {paragraph}
-          </p>
-        ))}
-      </div>
+      {people.map((person, personIndex) => (
+        <div key={person.name} className={personIndex === 0 ? "" : "mt-10"}>
+          <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+            {person.title ? `${person.name}, ${person.title}` : person.name}
+          </h2>
+          <div className="mt-6 rounded-xl bg-navy-mid p-6 ring-1 ring-white/10 sm:p-8">
+            {person.bio.map((paragraph, index) => (
+              <p
+                key={paragraph}
+                className={`${index === 0 ? "" : "mt-5 "}text-base leading-relaxed text-white/80 sm:text-lg`}
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </div>
+      ))}
     </section>
   );
 }
@@ -126,8 +125,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <PersonSection eyebrow="Meet the founder" person={about.founder} />
-      <PersonSection eyebrow="Meet the team" person={about.teamMember} />
+      <FoundersSection people={[about.founder, about.coFounder]} />
 
       <section className="mt-10 rounded-xl bg-navy-mid p-6 ring-1 ring-white/10 sm:p-8">
         <p className="font-heading text-xs tracking-[0.28em] text-gold uppercase">
