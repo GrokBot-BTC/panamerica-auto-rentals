@@ -25,7 +25,7 @@ npm start
 - `/services` — fleet management, platform ops (Turo & rideshare), automotive logistics
 - `/plans` — owner service ladder: Spotlight (self-serve $10 / $15 / $25 Coming), then fleet management 80/20, 50/50 guaranteed payment, and 20/80 owner exit (month-to-month / 30-day notice teaser; fleet rungs include Spotlight listing + insights). Each rung links to its agreement (`/plans/<slug>`) with a PDF download. Canonical agreement text lives in `data/agreements.json` (and the generated `public/plans/*-agreement.pdf`); do not hard-code terms into page copy.
 - `/partners` — curated Fleet partners (no Turo scrape)
-- `/about` — company description, Fleet partners teaser, and Sunbiz legal facts for Panamerica Auto, LLC
+- `/about` — company description, "Everything your car needs, under one roof", one **Meet the founders** section (Chris Volkernick, then Thais Lira, co-founder; bios in `lib/site.ts` `about.founder` / `about.coFounder`, no photos), Fleet partners teaser, and Sunbiz legal facts for Panamerica Auto, LLC
 - `/contact` — name / email / message; **Send** opens `mailto:`; **Schedule an intro call** opens the Google Calendar booking page in a new tab. Under the phone and email: **Find us on** Google and Facebook (same URLs as the footer). Yelp is omitted until a public URL exists. These listings are not in the primary nav.
 
 ## Contact email
