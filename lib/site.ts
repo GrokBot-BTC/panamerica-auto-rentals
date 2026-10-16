@@ -80,6 +80,12 @@ export const about = {
       "Turo was my first work in the car business, and I learned it by doing it. I also hold a computer science degree and have a software development background in web and mobile apps. I'm also experimenting with AI and automation solutions in the business, and I'm exploring branching out into the autonomous vehicle market as it emerges, including the Cybercab.",
     ],
   },
+  teamMember: {
+    name: "Thais Lira",
+    bio: [
+      "Thais Lira is the authorized member of Panamerica Auto, LLC and a member of the Panamerica Auto Rentals team. She has 3+ years of experience in customer service and business administration, including fleet management coordination, virtual support, and overseeing customer service teams. She studied international relations and governance, and has experience supporting clients and vendors across borders and in more than one language.",
+    ],
+  },
 } as const;
 
 export const services = [
