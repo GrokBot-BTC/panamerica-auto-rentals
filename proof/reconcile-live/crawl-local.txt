@@ -1,7 +1,6 @@
-58 urls crawled; non-200: []
+57 urls crawled; non-200: []
 200 /
-200 /CNAME
-200 /_next/static/P38VgOhS1dgr-qGlr_HET/_buildManifest.js
+200 /_next/static/EQ9grVKjQ8nC-tUOmhZBU/_buildManifest.js
 200 /_next/static/chunks/0cz1d0mv5g_q7.js
 200 /_next/static/chunks/0kdu37gq49_8d.js
 200 /_next/static/chunks/10647oklcpsvw.js

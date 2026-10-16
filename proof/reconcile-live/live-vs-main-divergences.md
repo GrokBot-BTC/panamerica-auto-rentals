@@ -15,7 +15,7 @@ Method: `next build` of main 51ea5a9 (prerendered HTML) compared, text + <head> 
 | JSON-LD | `organizationJsonLd()` in `lib/seo.ts` injected in layout | `LocalBusinessJsonLd` component + `localBusinessJsonLd()` | live; same fields/values (only key order differs) |
 | Canonical / og:url / og:image host | apex `https://panamericafleet.com` | `https://www.panamericafleet.com` (`SITE_URL`; apex 308s to www) | live (matches the host the site is actually served on); NOTE for Chris |
 | `/about` legal fact | `Authorized member: Thais Lira` (`legal.authorizedMember`) | `Authorized members: Chris Volkernick and Thais Lira` (`legal.authorizedMembers` + `formatNameList`) | live |
-| `/about` people | "Meet the founder" (Chris) + "Meet the team" (Thais, third-person bio) | single "Meet the founders": Chris, then Thais Lira, co-founder, approved first-person bios verbatim, no photos | new approved wording |
+| `/about` people | "Meet the founder" (Chris) + "Meet the team" (Thais, third-person bio) | single "Meet the founders": Chris, then Thais Lira (heading is the name only), approved first-person bios verbatim, no photos | new approved wording |
 | `/about` one-roof section | same content (PR #3) | same | identical |
 | favicon / icons | old `favicon.ico` | `favicon.ico` + `icon.png` + `apple-icon.png`, `scripts/build-favicons.py` | live |
 | `robots.txt` / `sitemap.xml` | robots only, no sitemap | robots with sitemap + `sitemap.xml`, both `force-static` | live |
