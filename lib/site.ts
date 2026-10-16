@@ -82,7 +82,6 @@ export const about = {
   },
   coFounder: {
     name: "Thais Lira",
-    title: "co-founder",
     bio: [
       "I bring more than four years of experience in customer service and business administration to Panamerica Auto Rentals. I manage and coordinate all aspects of our fleet management, and I provide virtual support to guests and to our team. I've also overseen customer service teams, so I know what it takes to keep service consistent, responsive, and friendly. I'm currently specializing in international relations and governance studies, which helps me with cross-border coordination, international client and vendor relations, and multilingual support. I enjoy making the rental experience simple for guests and dependable for the owners we work with.",
     ],
